@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff3e4;
+}
+
+header {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #fff3e4;
+  height: 2em;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1.25em;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav a {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #553910;
+}
+
+nav a:hover {
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.534
+  ); /* Add a hover effect if desired */
+}
+
+nav a:hover {
+  color: #8e611c;
+}
+
+.banner {
+  box-sizing: border-box;
+  padding-left: 20px;
+  height: 450px;
+  width: 100%;
+  background-color: #ff9f69;
+  display: flex;
+}
+
+.bannerImg {
+  height: 400px;
+  width: 50%;
+  padding: 25px 150px;
+  align-items: center;
+}
+
+.bannerDesc,
+.bannerDesc p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 20px 30px 30px 20px;
+  justify-content: center;
+  align-items: center;
+  color: #2e1f09;
+}
+
+.bannerButton {
+  background-color: #d23500;
+  height: 50px;
+  width: 100px;
+  color: #fff3e4;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  color: #553910;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: #d23500;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  text-align: center;
+  color: #2e1f09;
+  font-weight: 500;
+  width: 100%;
+  padding: 20px;
+  margin-left: 5px;
+  background-color: #ff9f69;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 0px 10px 30px;
+  color: #2e1f09;
+}
+
+.about {
+  padding: 70px;
+}
+
+.about::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+figure {
+  padding: 20px;
+  float: left;
+}
+
+figcaption {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.5em;
+}
+
+.about p {
+  padding-top: 20px;
+  width: 80%;
+  padding-bottom: 70px;
+}
+
+.posts {
+  display: flex;
+  padding-top: 40px;
+  text-align: left;
+  font-size: 1.25em;
+  padding: 5px;
+  margin: 10px;
+  height: 550px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.rugDesigner,
+.vintageQuiz,
+.pantoneInspo {
+  box-sizing: border-box;
+  color: #2e1f09;
+  box-sizing: content-box;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.rug,
+.interiorStyle,
+.pantone {
+  height: 220px;
+  width: 320px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+p {
+  text-align: left;
+  padding: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  color: #2e1f09;
+}
+
+.shop {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  background-color: #2e1f09;
+  color: #f9e0c1;
+  padding: 5px;
+  border: 1px solid #553910;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2e1f099f;
+}
+
+.customRugs,
+.sectionals,
+.designInspo {
+  height: 350px;
+  width: 200px;
+  background-color: #d8ba66;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 70px;
+  border-radius: 4px;
+}
+
+.customRugs img,
+.sectionals img,
+.designInspo img {
+  height: 300px;
+  width: 200px;
+  align-items: center;
+}
+
+footer {
+  background-color: #ff9f69;
+  position: relative;
+  margin-top: 250px;
+}
+
+footer p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 5px;
+}

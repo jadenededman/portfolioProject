@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="roomGenerator.css">
+  <title>Room Generator</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="photos/Untitled (1).png" alt="Lykke Good Logo" height="150" width="150">
+        </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalog.html">Products</a>
+        <a href="blog.html">Design Ideas</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"> <a href="index.html"> Home     </a></li>
+    <li class="breadcrumb-item"> <a href="blog.html"> Design Ideas </a></li>
+</ol>
+    <div class="banner">
+        <h1>Room Generator</h1>
+        <p>If you're looking for some inspiration use our room generator to discover different styles and their key features.</p>
+    </div>
+    <h2 id="title">Design Paradise</h2>
+<div id="room">
+  <img id="randomImage" src="photos/conversationPit.webp" alt="Random Image">
+  <p id="description">Click the "Generate Room" button to find a collection of different design styles. We've included a variety of interior design subcategories and have mixed old and new to get your wheels going.</p>
+</div>
+<button id="generateRoom" onclick="generateRandomImage()">Generate Room</button>
+
+<script>
+  const images = [
+    { path: "photos/hollywoodRegency2.webp", title: "Hollywood Regency", description: "Hollywood Regency interior design, inspired by the glamour of 1930s and 1940s Hollywood, features bold colors, luxurious materials like velvet and metallic finishes, and a mix of modern and traditional furniture. Mirrored surfaces, statement lighting, and Art Deco influences contribute to the opulent ambiance, creating a luxurious and visually striking atmosphere. The style emphasizes drama and sophistication through plush textures, reflective surfaces, and carefully curated accessories."},
+    { path: "photos/modernDesign.png", title: "Modern Design", description: "Modern interior design is characterized by clean lines, simplicity, and a focus on functionality. Neutral color palettes, often with pops of bold accent colors, contribute to a minimalist aesthetic. Sleek furniture, open spaces, and an emphasis on natural light create a contemporary and uncluttered atmosphere in modern design."},
+    { path: "photos/contemporaryMCM.jpeg", title: "Contemporary-Mid Century Mix", description: "A hybrid of contemporary and mid-century modern design seamlessly blends clean lines and simplicity with the iconic elements of mid-century style. Neutral color schemes prevail, while incorporating warm wood tones and vibrant accent colors for a balanced look. This design style features minimalist furniture, geometric shapes, and a harmonious mix of modern functionality with the retro charm of mid-century accents, resulting in a timeless and stylish interior."},
+    { path: "photos/designInspo3.jpeg", title: "Mid-Century Modern", description: "Mid-century modern design is characterized by clean lines, functional simplicity, and a focus on bringing the outdoors in. Earthy and warm color palettes, along with organic materials like wood and leather, define the style. Furniture often features tapered legs and bold geometric shapes, creating a timeless and iconic look that emphasizes both form and function in a harmonious balance."},
+    { path: "photos/homeDesign.jpeg", title: "Modern", description: "Modern design is characterized by a clean and streamlined aesthetic, emphasizing simplicity, functionality, and a strong connection to the surrounding environment. Neutral color palettes, open spaces, and ample natural light contribute to a minimalist atmosphere. Furniture designs are often sleek and unadorned, incorporating a mix of materials like metal, glass, and concrete to create a contemporary and uncluttered look."},
+    { path: "photos/popArcade.webp", title: "Pop Arcade", description: "Pop arcade design is a vibrant and playful style inspired by the aesthetics of classic arcades. Bold and bright colors, particularly neons, dominate the palette, creating a lively atmosphere. Retro arcade graphics, pixel art, and nostalgic gaming elements are incorporated into the decor, while furniture with sleek lines and futuristic touches contribute to a fun and energetic space that pays homage to the excitement of arcade culture."},
+    { path: "photos/maximalism.jpeg", title: "Maximalism", description: "Maximalist design is an eclectic and bold style that embraces an abundance of patterns, colors, and textures. Vibrant and contrasting hues, along with a mix of luxurious fabrics, define the rich color palette. Furniture and decor feature intricate details, and the space is adorned with a diverse array of accessories, creating a visually stimulating and opulent environment that revels in excess."}
+    // Add more image URLs as needed
+  ];
+
+  function getRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+  }
+
+  function generateRandomImage() {
+    const { path, title, description } = getRandomImage();
+    document.getElementById("randomImage").src = path;
+    document.getElementById("title").innerText = title;
+    document.getElementById("description").innerText = description;
+  }
+</script>
+<footer>
+    <p>Contact</p>
+    <p><strong>email:</strong> example@example.com</p>
+    <p><strong>telephone:</strong> <tel>555-555-5555</tel></p>
+    <p><strong>address:</strong><br>123 main street<br>
+        Ogden, UT<br>
+        84404
+    </p>
+    <nav class="footerNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalog.html">Products</a>
+        <a href="blog.html">Design Ideas</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    </footer>
+</body>
+</html>

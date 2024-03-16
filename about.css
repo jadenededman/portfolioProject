@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff3e4;
+  box-sizing: border-box;
+}
+
+header {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #fff3e4;
+  height: 2em;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1.25em;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav a {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #553910;
+}
+
+nav a:hover {
+  background-color: rgba(204, 204, 204, 0.534);
+}
+
+nav a:hover {
+  color: #8e611c;
+}
+
+.banner {
+  box-sizing: bordeSr-box;
+  padding-left: 20px;
+  height: 300px;
+  width: 100%;
+  background-color: #ff9f69;
+  display: flex;
+}
+
+.bannerImg {
+  height: 400px;
+  width: 50%;
+  padding: 25px 150px;
+  align-items: center;
+}
+
+.banner p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: left;
+  margin: 30px 50px 30px 20px;
+  justify-content: center;
+  align-items: center;
+  color: #2e1f09;
+}
+
+.bannerButton {
+  background-color: #d23500;
+  height: 50px;
+  width: 100px;
+  margin-top: 5px;
+  color: #fff3e4;
+}
+
+.about,
+.thankYou {
+  box-sizing: border-box;
+  margin: 30px 70px 30px 70px;
+  padding-top: 20px;
+}
+
+.about::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+figure,
+img {
+  padding: 10px;
+  float: left;
+}
+
+figcaption {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.5em;
+}
+
+.about p,
+.thankYou p {
+  width: 80%;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: left;
+  margin: 50px 30px 30px 20px;
+  justify-content: center;
+  align-items: center;
+  color: #2e1f09;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  color: #d23500;
+  padding: 5px;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  width: 80%;
+  padding: 10px;
+}
+
+.team {
+  background-color: #f9e0c1;
+  padding: 10px;
+  margin: 30px 70px 30px 70px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.team img {
+  display: inline-block;
+  padding: 5px;
+}
+
+.bio {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+  width: 70%;
+  margin: 5px 10px 5px 5px;
+}
+
+footer {
+  background-color: #ff9f69;
+  position: relative;
+  margin-top: 250px;
+}
+
+footer p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 5px;
+}

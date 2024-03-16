@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff3e4;
+}
+
+header {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #fff3e4;
+  height: 2em;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1.25em;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav a {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #553910;
+}
+
+nav a:hover {
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.534
+  ); /* Add a hover effect if desired */
+}
+
+nav a:hover {
+  color: #8e611c;
+}
+
+.banner {
+  box-sizing: border-box;
+  padding-left: 20px;
+  height: 300px;
+  width: 100%;
+  background-color: #ff9f69;
+  text-align: center;
+}
+
+.bannerDesc,
+.banner p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  justify-content: center;
+  align-items: center;
+  color: #2e1f09;
+}
+
+.bannerButton {
+  background-color: #d23500;
+  height: 50px;
+  width: 100px;
+  margin-top: 5px;
+  color: #fff3e4;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2e1f099f;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  color: #553910;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: #d23500;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  text-align: center;
+  color: #2e1f09;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9f69;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.formFill,
+.shop {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9e0c1;
+  border-radius: 4px;
+  width: 30%;
+  height: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+label,
+option,
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  display: block;
+  margin: 10px;
+  font-weight: bold;
+}
+
+input [type="text"],
+input [type="tel"],
+textarea,
+select {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.formSubmit,
+button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  background-color: #553910;
+  color: #f9e0c1;
+  padding: 5px;
+  border: 1px solid #553910;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.customRugs,
+.designInspo {
+  text-align: center; /* Center text within divs */
+}
+
+.customRugs img,
+.designInspo img {
+  height: 250px;
+  width: 300px;
+  display: block;
+  margin: 10;
+}
+
+footer {
+  background-color: #ff9f69;
+  position: relative;
+  margin-top: 250px;
+}
+
+footer p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 5px;
+}
+
+.footerNav a {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 0.75em;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+}

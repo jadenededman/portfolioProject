@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Lykke Good</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="photos/Untitled (1).png" alt="Lykke Good Logo" height="200" width="200">
+        <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="catalog.html">Products</a>
+       <a href="blog.html">Design Ideas</a>
+       <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<div class="banner">
+        <h1>Contact Us</h1>
+        <p>Have questions?<br>
+           Found something we’ll think is cool?<br>
+           Have a problem with your order?<br>
+           Want to collab? Whatever the situation, we’re here!</p>
+        </div>
+    <main>
+        <section class="formFill">
+        <div class="contactForm">
+            <form onsubmit="mailto:jadenededman@gmail.com">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="emailAddress">Email Address</label>
+                <input type="text" id="emailAddress" name="emailAddress" required>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="subject">Subject</label>
+                <select id="colors" name="colors">
+                    <option value="order">Order Inquiry</option>
+                    <option value="collab">Collab</option>
+                    <option value="question">Question</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="textContent">Message</label>
+                <textarea id="comments" rows="13" cols="45"></textarea>
+        
+                <button class="formSubmit" type="submit">Submit Form</button>
+                </form>
+        </div>
+        </section>
+        <section class="shop">
+            <div class="customRugs">
+                <img src="photos/homeDesign.jpeg" alt="Shop custom rugs">
+                <button onclick="" href="products.html">View Catalog</button>
+            </div>
+            <div class="designInspo">
+                <img src="photos/designMag.webp" alt="mid century modern living room">
+                <button onclick="" href="blog.html">Get Design Inspiration</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact</p>
+        <p><strong>email:</strong> example@example.com</p>
+        <p><strong>telephone:</strong> <tel>555-555-5555</tel></p>
+        <p><strong>address:</strong><br>123 main street<br>
+            Ogden, UT<br>
+            84404
+        </p>
+        <div class="footerNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="catalog.html">Products</a>
+            <a href="blog.html">Design Ideas</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </footer>
+</body>
+</html>

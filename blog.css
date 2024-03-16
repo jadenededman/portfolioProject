@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff3e4;
+}
+
+header {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#breadcrumb {
+  padding: 10px 30px;
+  list-style: none;
+}
+
+.logo img {
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #fff3e4;
+  height: 2em;
+  padding: 20px;
+  margin-top: 5px;
+  font-size: 1.25em;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav a {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #553910;
+}
+
+nav a:hover {
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.534
+  ); /* Add a hover effect if desired */
+}
+
+nav a:hover {
+  color: #8e611c;
+}
+
+h1 {
+  padding: 20px;
+  font-family: "Roboto Mono", monospace;
+  background-color: #ff9f69;
+  color: #2e1f09;
+}
+
+.blogPosts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.blog {
+  background-color: #ffa06928;
+  border: 1px solid #8e611c;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+h2,
+p {
+  font-family: "Rubik", sans-serif;
+  color: #2e1f09;
+  padding-left: 10px;
+  margin: 10px;
+}
+
+h1,
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  margin-left: 10px;
+  padding: 10px;
+  color: #d23500;
+}
+
+#mainImg {
+  height: 400px;
+  width: auto;
+  margin: 30px;
+}
+
+.designToolImg {
+  height: 250px;
+  width: auto;
+  padding: 20px;
+}
+
+ol a {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  background-color: #2e1f09;
+  color: #f9e0c1;
+  padding: 5px;
+  border: 1px solid #553910;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2e1f099f;
+}
+
+footer {
+  background-color: #ff9f69;
+  position: relative;
+  margin-top: 250px;
+}
+
+footer p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 5px;
+}
+
+.footerNav a {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 0.75em;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+}
